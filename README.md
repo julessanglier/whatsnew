@@ -45,6 +45,7 @@ That's it — zero registration needed. The source is auto-discovered on next ru
 ## Roadmap
 
 - [ ] **X.com source** — fetch trending posts from curated tech communities (lists, hashtags like `#buildinpublic`, `#ai`, `#devtools`) using the Twitter API v2 Bearer token (`TWITTER_BEARER_TOKEN` secret), with a Nitter-based scraping fallback for no-credentials setups
+- [ ] **RSS/Atom source** — generic feed reader configured via an `## RSS Feeds` section in `profile.md` (one URL per line); supports RSS 2.0 and Atom, caps at 10 items per feed, skips broken feeds gracefully
 
 ## Architecture
 
