@@ -1,10 +1,46 @@
 # whatsnew — Daily Tech Watch
 
+[![Daily Tech Watch](https://github.com/julessanglier/whatsnew/actions/workflows/daily_report.yml/badge.svg)](https://github.com/julessanglier/whatsnew/actions/workflows/daily_report.yml)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
+
 Automated daily trending tech report. Runs every morning at 07:00 UTC via GitHub Actions, scrapes GitHub Trending, Product Hunt, Skills.sh, enriches with Claude AI, and commits a Markdown report.
+
+## Latest Report
+
+[**View latest report →**](https://github.com/julessanglier/whatsnew/blob/main/reports/latest.md)
+
+## Sources
+
+| Source | What it fetches | Credentials required |
+|--------|----------------|----------------------|
+| GitHub Trending | Top repos trending today | None |
+| Product Hunt | Top products of the day | `PRODUCTHUNT_API_KEY` (optional, falls back to scraping) |
+| Skills.sh | Trending developer skills | None |
+
+## Sample Output
+
+```markdown
+# whatsnew ☕ — 2026-03-15
+*Generated on 2026-03-15 07:00 UTC*
+
+## Summary
+Today's highlights lean heavily toward AI tooling and Rust-based developer utilities...
+
+## GitHub Trending
+- **[burn-rs / burn](https://github.com/burn-rs/burn)** `Rust` — ⭐ 312
+  *Deep learning framework built for flexibility and performance*
+  > Why it's trending: New v0.14 release with WGPU backend improvements
+  > Relevance: Rust + ML tooling matches your core interests
+
+## Product Hunt
+- **[Cursor 0.40](https://www.producthunt.com/posts/cursor-0-40)**
+  *AI code editor with multi-file edit and background agents*
+  > Relevance: Developer productivity tool, directly in your wheelhouse
+```
 
 ## Reports
 
-- `reports/latest.md` — most recent report
+- [`reports/latest.md`](reports/latest.md) — most recent report
 - `reports/YYYY-MM-DD.md` — daily archives
 - `reports/weekly-YYYY-WXX.md` — weekly digests (Mondays)
 
